@@ -4,14 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "tsc": "rm -rf build/ && tsc",
-    "ts": "rm -rf build/ && tsc -w",
-    "dev": "nodemon ./build/oop-ts/12abstract_class.js"
+    "tsc": "rimraf build && tsc",
+    "ts": "rimraf build && tsc -w",
+    "dev": "nodemon ./build/oop-ts/26type_parameters_in_generics_constraints.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^3.0.2",
+    "rimraf": "^5.0.5",
     "typescript": "^5.3.3"
   }
 }
